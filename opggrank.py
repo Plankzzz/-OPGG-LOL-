@@ -35,7 +35,7 @@ def OPGGChampionRank():
     data = {'名称': name, '层级':tier, '胜率%':winrate, '登场率%':pick, '禁用率%':ban}
     data = pd.DataFrame(data)
     print(data)
-    filename = 'C:\\Users\\Plank\\Desktop\\' + position +'梯度.xlsx'
+    filename = position +'梯度.xlsx'
     data.to_excel(filename, index = False)
 
 if __name__ == "__main__":
